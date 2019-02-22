@@ -27,6 +27,7 @@ a:hover {
 main {
   align-items: center;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   min-height: 100vh;
 }
@@ -34,6 +35,16 @@ main {
 svg {
   display: block;
   height: 600px;
+
+  rect {
+    -webkit-filter: drop-shadow(0 0 20px rgba(0,0,0,.2));
+    filter: drop-shadow(0 0 20px rgba(0,0,0,.2));
+  }
+}
+
+h2 {
+  font-size: 1.2rem;
+  text-transform: uppercase;
 }
 
 .sr-only {
