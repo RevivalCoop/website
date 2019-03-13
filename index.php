@@ -13,11 +13,11 @@
           </p>
           <h3 class="mt-5">Services</h3>
           <div class="row">
-            <div class="col">
+            <div class="col-md-4 offset-md-2 service">
               <h4 class="h5">Branding and Identity Design</h4>
               <p>Creating unique and simple yet effective graphic design elements and standards that communicate an organization's brand and values with beauty and clarity.</p>
             </div>
-            <div class="col">
+            <div class="col-md-4 service">
               <h4 class="h5">Web Development, Design, and Consulting</h4>
               <p>
                 Building well engineered and thoughtfully designed web experiences and tools that help organizations achieve their goals quickly and under budget.
@@ -28,6 +28,8 @@
       </div>
     </div>
   </section>
+
+  <hr />
 
   <section class="work">
     <div class="container">
@@ -54,7 +56,9 @@
                 </div>
               </div>
 
-              <div class="card">
+              <hr />
+
+              <div class="card reverse">
                 <img class="card-img-top" src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/pixability-logo.png" />
                 <div class="card-body">
                   <h3 class="card-title h5">Pixability</h3>
@@ -70,17 +74,32 @@
                 </div>
               </div>
 
+              <hr class="reverse" />
+
               <div class="card">
                 <img class="card-img-top p-5" src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/tekworx-logo.svg" />
                 <div class="card-body">
                   <h3 class="card-title h5">TekWorx</h3>
                   <p>
-
+                    TekWorx needed a site refresh and help building tools to draw in new leads. We created
+                    a calculator tool and integrated it with their marketing automation system to track potential customers.
                   </p>
                 </div>
               </div>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="reverse" />
+
+  <section class="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h2>Contact Revival</h2>
         </div>
       </div>
     </div>
