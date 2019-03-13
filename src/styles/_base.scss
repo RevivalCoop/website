@@ -10,7 +10,7 @@ html, body {
 }
 
 body {
-  background-color: #c4b49a;
+  background-color: #f3f3f1;
   font-family: $sans;
   margin: 0;
 }
@@ -22,14 +22,6 @@ a {
 
 a:hover {
     text-decoration: underline
-}
-
-main {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  min-height: 100vh;
 }
 
 svg {
@@ -55,5 +47,50 @@ h2 {
   margin: -1px;
   overflow: hidden;
   clip: rect(0,0,0,0);
+  border: 0;
+}
+
+main > section {
+  padding: 20vh;
+}
+
+section h2 {
+  margin-bottom: 2rem;
+}
+
+h1 {
+  display: block;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: 200;
+}
+
+.logo {
+  display: block;
+  max-width: 20vw;
+}
+
+.about {
+  padding: 5rem 0;
+
+  .lead {
+    margin-bottom: 20vh;
+  }
+}
+
+.work {
+  h2 {
+    text-align: center;
+  }
+
+  .card {
+    margin-bottom: 20vh;
+  }
+}
+
+.card {
   border: 0;
 }
