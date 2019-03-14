@@ -30,7 +30,7 @@
 
               <hr />
 
-              <div class="card reverse">
+              <!--<div class="card reverse">
                 <img class="card-img-top" src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/pixability-logo.png" />
                 <div class="card-body">
                   <h3 class="card-title h5">Pixability</h3>
@@ -46,7 +46,7 @@
                 </div>
               </div>
 
-              <hr class="reverse" />
+              <hr class="reverse" />-->
 
               <div class="card">
                 <img class="card-img-top p-5" src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/tekworx-logo.svg" />
