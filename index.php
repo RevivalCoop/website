@@ -48,7 +48,7 @@
 
               <hr class="reverse" />-->
 
-              <div class="card">
+              <div class="card reverse">
                 <img class="card-img-top p-5" src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/tekworx-logo.svg" />
                 <div class="card-body">
                   <h3 class="card-title h5">TekWorx</h3>
