@@ -149,3 +149,22 @@ section hr {
 .card {
   border: 0;
 }
+
+.wpforms-container.wpforms-container-full {
+  max-width: 600px;
+  margin: 2rem auto;
+
+  input {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .wpforms-submit-container {
+    text-align: center;
+
+    button {
+      max-width: 160px;
+      width: 100%;
+    }
+  }
+}

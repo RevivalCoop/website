@@ -100,7 +100,7 @@
       <div class="row">
         <div class="col">
           <h2>Contact Revival</h2>
-          <?php do_shortcode('[wpforms id="5" title="false" description="false"]'); ?>
+          <?php echo do_shortcode('[wpforms id="5" title="false" description="false"]'); ?>
         </div>
       </div>
     </div>
