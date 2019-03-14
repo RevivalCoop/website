@@ -2,34 +2,6 @@
 
 <main>
   <h1><img class="logo" src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/revival-logo.svg" alt="Revival Coop" /></h1>
-  <section class="about">
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <h2 class="text-center">About Revival</h2>
-          <p class="lead text-center">
-            We are a creative co-operative of designers and engineers specializing in branding, web development,
-            and design.
-          </p>
-          <h3 class="mt-5">Services</h3>
-          <div class="row">
-            <div class="col-md-4 offset-md-2 service">
-              <h4 class="h5">Branding and Identity Design</h4>
-              <p>Creating unique and simple yet effective graphic design elements and standards that communicate an organization's brand and values with beauty and clarity.</p>
-            </div>
-            <div class="col-md-4 service">
-              <h4 class="h5">Web Development, Design, and Consulting</h4>
-              <p>
-                Building well engineered and thoughtfully designed web experiences and tools that help organizations achieve their goals quickly and under budget.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <hr />
 
   <section class="work">
     <div class="container">
@@ -88,6 +60,45 @@
               </div>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr />
+
+  <section class="about">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h2 class="text-center">About Revival</h2>
+          <p class="lead text-center">
+            We are a creative co-operative of designers and engineers specializing in branding, web development,
+            and design.
+          </p>
+          <h3 class="mt-5">Services</h3>
+          <div class="row">
+            <div class="col-md-4 offset-md-2 service">
+              <h4 class="h5">Branding and Identity Design</h4>
+              <p>Creating unique and simple yet effective graphic design elements and standards that communicate an organization's brand and values with beauty and clarity.</p>
+            </div>
+            <div class="col-md-4 service">
+              <h4 class="h5">Web Development, Design, and Consulting</h4>
+              <p>
+                Building well engineered and thoughtfully designed web experiences and tools that help organizations achieve their goals quickly and under budget.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row workers">
+        <div class="col-md-4 offset-md-2">
+          <p class="display-1">:-)</p>
+          <span class="display-4">Sean Beck</span>
+        </div>
+        <div class="col-md-4 offset-md-2">
+          <p class="display-1">:-P</p>
+          <span class="display-4">Colin Robison</span>
         </div>
       </div>
     </div>
