@@ -91,20 +91,22 @@
           </div>
         </div>
       </div>
-      <div class="row workers">
-        <div class="col-md-4 offset-md-2">
-          <p class="display-1">:-)</p>
-          <span class="display-4">Sean Beck</span>
+      <div class="workers">
+        <div class="row">
+          <div class="col-md-4 offset-md-2">
+            <p class="display-1">:-)</p>
+            <span class="display-4">Sean Beck</span>
+          </div>
+          <div class="col-md-4">
+            <p class="display-1">:-P</p>
+            <span class="display-4">Colin Robison</span>
+          </div>
         </div>
-        <div class="col-md-4">
-          <p class="display-1">:-P</p>
-          <span class="display-4">Colin Robison</span>
-        </div>
-      </div>
-      <div class="row workers">
-        <div class="col-md-4 offset-md-2">
-          <p class="display-1">:-D</p>
-          <span class="display-4">Mary Nastasi</span>
+        <div class="row">
+          <div class="col-md-4 offset-md-2">
+            <p class="display-1">:-D</p>
+            <span class="display-4">Mary Nastasi</span>
+          </div>
         </div>
       </div>
     </div>
