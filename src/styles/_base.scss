@@ -54,17 +54,6 @@ main > section {
   padding: 20vh;
 }
 
-main > hr {
-  background-color: $yellow;
-  height: 8px;
-  margin-top: 6rem;
-  transform: rotate(2deg);
-
-  &.reverse {
-    transform: rotate(-2deg);
-  }
-}
-
 section h2 {
   margin-bottom: 2rem;
 }

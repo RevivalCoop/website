@@ -10,4 +10,15 @@
 	.workers .row {
 		margin-top: 4rem;
 	}
+
+	main > hr {
+	  background-color: $yellow;
+	  height: 8px;
+	  margin-top: 6rem;
+	  transform: rotate(2deg);
+
+	  &.reverse {
+	    transform: rotate(-2deg);
+	  }
+	}
 }
