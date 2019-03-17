@@ -21,4 +21,15 @@
 	    transform: rotate(-2deg);
 	  }
 	}
+
+	section hr {
+	  background-color: $blue;
+	  height: 4px;
+	  margin: 10vh auto;
+	  transform: rotate(10deg);
+
+	  &.reverse {
+	    transform: rotate(-10deg);
+	  }
+	}
 }
