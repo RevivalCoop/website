@@ -9,7 +9,7 @@
 	</head>
 	<body <?php body_class(); ?>>
 		<header class="header-main">
-			<nav class="navbar navbar-light bg-light">
+			<nav class="navbar navbar-light">
 			  <a class="navbar-brand" href="/"><img src="<?php echo get_template_directory_uri(); ?>/src/images/revival-logo.svg" alt="Revival Coop Logo"></a>
 			</nav>
 		</header>

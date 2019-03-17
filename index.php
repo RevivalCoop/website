@@ -77,8 +77,7 @@
         <div class="col">
           <h2 class="text-center">About Revival</h2>
           <p class="lead text-center">
-            We are a creative co-operative of designers and engineers specializing in branding, web development,
-            and design.
+            We are a close-knit group of passionate creators who want to partner with you to make interesting, well-designed systems that accomplish your goals.
           </p>
           <h3 class="mt-5">Services</h3>
           <div class="row">
