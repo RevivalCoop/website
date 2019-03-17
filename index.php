@@ -1,8 +1,12 @@
 <?php get_header(); ?>
 
 <main>
-  <h1><img class="logo" src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/revival-logo.svg" alt="Revival Coop" /></h1>
-
+  <section>
+    <p class="lead text-center">
+      We are a creative co-operative of designers and engineers specializing in branding, web development,
+      and design.
+    </p>
+  </section>
   <section class="work">
     <div class="container">
       <div class="row">
