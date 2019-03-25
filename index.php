@@ -50,7 +50,7 @@
                 </div>
               </div>
 
-              <hr class="reverse" />-->
+              <hr class="reverse" /
 
               <div class="card reverse">
                 <img class="card-img-top p-5" src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/tekworx-logo.svg" />
@@ -61,7 +61,7 @@
                     a calculator tool and integrated it with their marketing automation system to track potential customers.
                   </p>
                 </div>
-              </div>
+              </div>-->
             </div>
           </div>
         </div>
