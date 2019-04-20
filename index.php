@@ -20,7 +20,7 @@
                   <h3 class="card-title h4">Center on Crime and Community Resilience</h3>
                   <p>
                     Northeastern's Center on Crime and Communuity Resilience needed a brand identity and
-                    web presence that helped reach research potential partners and show off their work.
+                    web presence that would help them reach research potential partners and show off their work. We designed, developed, and maintain their website, while advising on web best practices.
                   </p>
                   <h4 class="h5">Services</h4>
                   <ul>
@@ -29,30 +29,33 @@
                     <li>Web Development</li>
                     <li>Consulting</li>
                   </ul>
+                  <a class="btn btn-primary" target="_blank" href="https://www.ccresilience.org">Visit Site</a>
                 </div>
               </div>
 
               <hr />
 
-              <!--<div class="card reverse">
+              <div class="card reverse">
                 <img class="card-img-top" src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/pixability-logo.png" />
                 <div class="card-body">
                   <h3 class="card-title h5">Pixability</h3>
                   <p>
                     Pixability's marketing team has great ideas and needed help translating them into a digital form.
-                    We helped them create a feature rich website that got their message on video analytics to the world.
+                    We helped them create a feature rich website that got their message on video analytics to the world. We also built a tool for the sales team to create and share ad formats for product demonstrations. Finally, we've worked on the 
+                    product design of Pixability's main product, a video analytics advertising platform.
                   </p>
                   <ul>
                     <li>Web Development</li>
                     <li>Consulting</li>
                     <li>Product Design</li>
                   </ul>
+                  <a class="btn btn-primary" target="_blank" href="https://www.pixability.com">Visit Site</a>
                 </div>
               </div>
 
-              <hr class="reverse" /
+              <hr class="reverse" />
 
-              <div class="card reverse">
+              <div class="card">
                 <img class="card-img-top p-5" src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/tekworx-logo.svg" />
                 <div class="card-body">
                   <h3 class="card-title h5">TekWorx</h3>
@@ -60,8 +63,14 @@
                     TekWorx needed a site refresh and help building tools to draw in new leads. We created
                     a calculator tool and integrated it with their marketing automation system to track potential customers.
                   </p>
+                  <ul>
+                    <li>Web Development</li>
+                    <li>Consulting</li>
+                    <li></li>
+                  </ul>
+                  <a class="btn btn-primary" target="_blank" href="https://www.tekworx.us">Visit Site</a>
                 </div>
-              </div>-->
+              </div>
             </div>
           </div>
         </div>
@@ -95,6 +104,11 @@
         </div>
       </div>
       <div class="workers">
+        <div class="row">
+          <div class="col">
+            <h3>Members</h3>
+          </div> 
+        </div>
         <div class="row">
           <div class="col-md-4 offset-md-2">
             <p class="display-1">:-)</p>
