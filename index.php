@@ -29,7 +29,7 @@
                     <li>Web Development</li>
                     <li>Consulting</li>
                   </ul>
-                  <a class="btn btn-primary" target="_blank" href="https://www.ccresilience.org">Visit Site</a>
+                  <a class="btn btn-primary" target="_blank" href="https://www.ccresilience.org">Visit Site <i class="fal fa-long-arrow-alt-right"></i></a>
                 </div>
               </div>
 
@@ -49,7 +49,7 @@
                     <li>Consulting</li>
                     <li>Product Design</li>
                   </ul>
-                  <a class="btn btn-primary" target="_blank" href="https://www.pixability.com">Visit Site</a>
+                  <a class="btn btn-primary" target="_blank" href="https://www.pixability.com">Visit Site <i class="fal fa-long-arrow-alt-right"></i></a>
                 </div>
               </div>
 
@@ -67,7 +67,7 @@
                     <li>Web Development</li>
                     <li>Consulting</li>
                   </ul>
-                  <a class="btn btn-primary" target="_blank" href="https://www.tekworx.us">Visit Site</a>
+                  <a class="btn btn-primary" target="_blank" href="https://www.tekworx.us">Visit Site <i class="fal fa-long-arrow-alt-right"></i></a>
                 </div>
               </div>
             </div>
