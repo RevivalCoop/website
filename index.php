@@ -66,7 +66,6 @@
                   <ul>
                     <li>Web Development</li>
                     <li>Consulting</li>
-                    <li></li>
                   </ul>
                   <a class="btn btn-primary" target="_blank" href="https://www.tekworx.us">Visit Site</a>
                 </div>
