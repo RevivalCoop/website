@@ -7,7 +7,7 @@
       and design.
     </p>
   </section>
-  <section class="work">
+  <!-- <section class="work">
     <div class="container">
       <div class="row">
         <div class="col">
@@ -75,7 +75,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <hr />
 
@@ -130,16 +130,16 @@
 
   <hr class="reverse" />
 
-  <section class="contact">
+ <!--  <section class="contact">
     <div class="container">
       <div class="row">
         <div class="col">
           <h2>Contact Revival</h2>
-          <?php echo do_shortcode('[wpforms id="5" title="false" description="false"]'); ?>
+          <!-- <?php echo do_shortcode('[wpforms id="5" title="false" description="false"]'); ?> -->
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 </main>
 
 <?php get_footer(); ?>
