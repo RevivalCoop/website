@@ -4,9 +4,11 @@ const webpack = require('webpack');
 const autoprefixer = require('autoprefixer');
 const AssetsPlugin = require('assets-webpack-plugin');
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
-const CleanWebpackPlugin = require('clean-webpack-plugin');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const TerserPlugin = require('terser-webpack-plugin');
 const FriendlyErrorsPlugin = require('friendly-errors-webpack-plugin');
+const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 const path = require('path');
 const fs = require('fs');
 
@@ -29,14 +31,15 @@ const DEV = process.env.NODE_ENV === 'development';
 
 module.exports = {
   bail: !DEV,
+  mode: DEV ? 'development' : 'production',
   // We generate sourcemaps in production. This is slow but gives good results.
   // You can exclude the *.map files from the build during deployment.
   target: 'web',
-  devtool: DEV ? 'cheap-eval-source-map' : 'source-map',
+  devtool: DEV ? 'eval-cheap-source-map' : 'source-map',
   entry: [paths.appIndexJs],
   output: {
     path: paths.appBuild,
-    filename: DEV ? 'bundle.js' : 'bundle.[hash:8].js',
+    filename: DEV ? 'bundle.js' : 'bundle.[fullhash:8].js'
   },
   module: {
     rules: [
@@ -50,41 +53,59 @@ module.exports = {
       },
       {
         test: /.scss$/,
-        use: ExtractTextPlugin.extract({
-          fallback: 'style-loader',
-          use: [
-            {
-              loader: 'css-loader',
-              options: {
-                importLoaders: 1,
-                minimize: !DEV
-              },
+        use: [
+          MiniCssExtractPlugin.loader,
+          {
+            loader: "css-loader",
+          },
+          {
+            loader: "postcss-loader",
+            options: {
+              postcssOptions: {
+                plugins: [
+                  autoprefixer()
+                ]
+              }
+            }
+          },
+          {
+            loader: 'sass-loader',
+            options: {
+              implementation: require("sass"),
             },
-            {
-              loader: 'postcss-loader',
-              options: {
-                ident: 'postcss', // https://webpack.js.org/guides/migrating/#complex-options
-                plugins: () => [
-                  autoprefixer({
-                    browsers: [
-                      '>1%',
-                      'last 4 versions',
-                      'Firefox ESR',
-                      'not ie < 9', // React doesn't support IE8 anyway
-                    ],
-                  }),
-                ],
-              },
-            },
-            'sass-loader',
-          ],
-        }),
-      },
+          }
+        ],
+      }
     ],
   },
+  optimization: {
+    minimize: !DEV,
+    minimizer: [
+      new CssMinimizerPlugin({
+        minimizerOptions: {
+          map: {
+            inline: false,
+            annotation: true,
+          }
+        }
+      }),
+      new TerserPlugin({
+        terserOptions: {
+          compress: {
+            warnings: false
+          },
+          output: {
+            comments: false
+          }
+        }
+      })
+    ]
+  },
   plugins: [
-    !DEV && new CleanWebpackPlugin(['build']),
-    new ExtractTextPlugin(DEV ? 'bundle.css' : 'bundle.[hash:8].css'),
+    !DEV && new CleanWebpackPlugin(),
+    new MiniCssExtractPlugin({
+      filename: DEV ? 'bundle.css' : 'bundle.[fullhash:8].css'
+    }),
     new webpack.EnvironmentPlugin({
       NODE_ENV: 'development', // use 'development' unless process.env.NODE_ENV is defined
       DEBUG: false,
@@ -93,21 +114,6 @@ module.exports = {
       path: paths.appBuild,
       filename: 'assets.json',
     }),
-    !DEV &&
-      new webpack.optimize.UglifyJsPlugin({
-        compress: {
-          screw_ie8: true, // React doesn't support IE8
-          warnings: false,
-        },
-        mangle: {
-          screw_ie8: true,
-        },
-        output: {
-          comments: false,
-          screw_ie8: true,
-        },
-        sourceMap: true,
-      }),
     DEV &&
       new FriendlyErrorsPlugin({
         clearConsole: false,
@@ -118,7 +124,7 @@ module.exports = {
         host: 'localhost',
         port: 4000,
         logLevel: 'silent',
-        files: ['./*.php'],
+        files: ['./template/*.php'],
         proxy: 'http://localhost:9009/',
       }),
   ].filter(Boolean),
