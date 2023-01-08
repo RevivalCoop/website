@@ -7,7 +7,7 @@
       and design.
     </p>
   </section>
-  <!-- <section class="work">
+  <section class="work">
     <div class="container">
       <div class="row">
         <div class="col">
@@ -15,11 +15,31 @@
           <div class="row">
             <div class="col-md-8 offset-md-2">
               <div class="card">
+                <img class="card-img-top" alt="North Shore Neurology & EMG Logo" src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/nsnae_logo.svg" />
+                <div class="card-body">
+                  <h3 class="card-title h4">North Shore Neurology & EMG</h3>
+                  <p>
+                    North Shore Neurology & EMG needed an expanded and updated web presence after adding two new office locations.
+                    We worked with the team at North Shore Neurology to create a new brand identity, logo, and website, as well as 
+                    setting up back office tools like Google Workspace for internal use.
+                  </p>
+                  <h4 class="h5">Services</h4>
+                  <ul>
+                    <li>Branding</li>
+                    <li>Web Design</li>
+                    <li>Web Development</li>
+                    <li>Consulting</li>
+                  </ul>
+                  <a class="btn btn-primary" target="_blank" href="https://www.nsnae.com">Visit Site <i class="fal fa-long-arrow-alt-right"></i></a>
+                </div>
+              </div>
+
+              <div class="card">
                 <img class="card-img-top" alt="Center on Crime and Community Resilience Logo" src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/ccr-logo.png" />
                 <div class="card-body">
-                  <h3 class="card-title h4">Center on Crime and Community Resilience</h3>
+                  <h3 class="card-title h4">Crime and Justice Policy Lab</h3>
                   <p>
-                    Northeastern's Center on Crime and Communuity Resilience needed a brand identity and
+                    University of Pennsylvania's Crime and Justice Policy Lab needed a brand identity and
                     web presence that would help them reach research potential partners and show off their work. We designed, developed, and maintain their website, while advising on web best practices.
                   </p>
                   <h4 class="h5">Services</h4>
@@ -29,7 +49,7 @@
                     <li>Web Development</li>
                     <li>Consulting</li>
                   </ul>
-                  <a class="btn btn-primary" target="_blank" href="https://www.ccresilience.org">Visit Site <i class="fal fa-long-arrow-alt-right"></i></a>
+                  <a class="btn btn-primary" target="_blank" href="https://crimejusticelab.org/">Visit Site <i class="fal fa-long-arrow-alt-right"></i></a>
                 </div>
               </div>
 
@@ -75,7 +95,7 @@
         </div>
       </div>
     </div>
-  </section> -->
+  </section>
 
   <hr />
 
@@ -116,12 +136,6 @@
           <div class="col-md-4">
             <p class="display-1">:-P</p>
             <span class="display-4">Colin Robison</span>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4 offset-md-2">
-            <p class="display-1">:-D</p>
-            <span class="display-4">Mary Nastasi</span>
           </div>
         </div>
       </div>
